@@ -2,5 +2,9 @@
   <router-view/>
 </template>
 
-<style>
+<style lang="scss">
+#app {
+  font-family: 'Sofia Pro', sans-serif;
+  @import url('http://fonts.cdnfonts.com/css/sofia-pro');
+}
 </style>
