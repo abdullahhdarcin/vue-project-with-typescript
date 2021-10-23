@@ -18,6 +18,7 @@
 
   .pages {
     margin-top: 25px;
+    margin-bottom: 25px;
 
     span {
       position: relative;
@@ -31,5 +32,22 @@
         color: green;
       }
     }
+  }
+
+  a {
+    color: black;
+  }
+
+  .fab {
+    margin-left: 45px;
+    font-size: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    justify-content: center;
+  }
+
+  .fa-linkedin:hover,
+  .fa-github:hover {
+    color: #0072b1;
   }
 }
