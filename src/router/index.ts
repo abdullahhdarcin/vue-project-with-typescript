@@ -1,25 +1,22 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import MainPage from '@/views/MainPage.vue'
+import AddTask from '../views/AddTask/AddTask.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/Home',
+    path: '/',
     name: 'Home',
     component: MainPage
+  },
+  {
+    path: '/add_task',
+    name: 'AddTask',
+    component: AddTask
   }
-  // ,
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  // }
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes
 })
 

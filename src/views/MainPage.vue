@@ -9,8 +9,9 @@
 <script>
 
 import Home from '@/views/Home/Home.vue'
+import AddTask from '@/views/AddTask/AddTask.vue'
 export default {
-components:{Home}
+components:{Home,AddTask}
 }
 </script>
 

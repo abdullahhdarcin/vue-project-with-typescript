@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.card {
+  background-color: #8080800d;
+  height: 90%;
+}
+
+.card-section {
+  padding: 10px;
+
+  span {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+  }
+
+  p {
+    display: block;
+    margin-left: 295px;
+    padding-bottom: 0;
+  }
+
+  input {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 50%;
+    text-align: left;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  button {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #02063f;
+    width: 10%;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    float: right;
+    margin-right: 290px;
+  }
+}
