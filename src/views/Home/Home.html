@@ -1,0 +1,38 @@
+<div class="home">		
+	<div class="header">
+		<h4>Vue 3 + TypeScript Todo Application</h4>
+	</div>
+
+	<div>
+		<table class="main-table">
+			<thead>
+				<tr>
+					<th>To-do List</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+				<tr v-for="task in tasks" :key="task.name">
+					<td>
+						<div>
+							{{task.title}} <span class="completed" v-if="task.completed">( Completed )</span><span class="not-completed" v-else>( Not Completed )</span>
+						</div>
+						<div class="description">
+							<p>- {{task.description}}</p>
+						</div>
+						
+					</td>
+					<td width="5%">
+						<!-- <i class="fa fa-check" aria-hidden="true" @click="setTaskComplete(task)"></i> -->
+						<button class="button">Completed</button>
+					</td>
+					<td width="8%">
+						<!-- <i class="fa fa-times" aria-hidden="true" @click.prevent="deleteTask(task)"></i> -->
+						<button class="button-delete">Delete</button>
+					</td>
+				</tr>
+				
+		</table>
+	</div>
+
+</div>

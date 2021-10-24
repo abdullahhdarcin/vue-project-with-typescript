@@ -1,8 +1,8 @@
 <div class="container">
-    <img class="image" v-bind:src="yourLogo" alt="yourLogo">
+    <img class="image" v-bind:src="yourLogo" alt="yourLogo" @click="$router.push('/')">
      
-      <div class="pages"><span><i class="fas fa-home"></i> Homepage</span></div>
-      <div class="pages"><span><i class="fas fa-users"></i> About</span></div>
+      <div class="pages" @click="$router.push('/')"><span><i class="fas fa-home"></i> Homepage</span></div>
+      <div class="pages" @click="$router.push('/About')"><span><i class="fas fa-users"></i> About</span></div>
       <div class="pages"><span><i class="fas fa-plus"></i> Add Task</span></div>
 
       <div class="social">

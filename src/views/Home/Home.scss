@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.main-table {
+  width: 100%;
+
+  td {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    button {
+      margin: 0px;
+    }
+  }
+
+  .description {
+    text-align: left;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  th {
+    background-color: #04aa6d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .button {
+    background-color: #04aa6d;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: #025336;
+    }
+  }
+
+  .button-delete {
+    background-color: rgb(168, 4, 4);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(87, 5, 5);
+    }
+  }
+
+  .completed {
+    color: #04aa6d;
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+  }
+
+  .not-completed {
+    color: rgb(87, 5, 5);
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+  }
+}
