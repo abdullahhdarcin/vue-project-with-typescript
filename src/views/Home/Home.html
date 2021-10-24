@@ -24,11 +24,11 @@
 					</td>
 					<td width="5%">
 						<!-- <i class="fa fa-check" aria-hidden="true" @click="setTaskComplete(task)"></i> -->
-						<button class="button">Completed</button>
+						<button @click="setTaskComplete(task)" class="button">Completed</button>
 					</td>
 					<td width="8%">
 						<!-- <i class="fa fa-times" aria-hidden="true" @click.prevent="deleteTask(task)"></i> -->
-						<button class="button-delete">Delete</button>
+						<button @click.prevent="deleteTask(task)" class="button-delete">Delete</button>
 					</td>
 				</tr>
 				

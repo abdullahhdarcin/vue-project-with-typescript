@@ -9,10 +9,10 @@
                 <span for="todoName"><b>ADD YOUR NEW TASK</b></span>
                 <div class="">
                     <p>Task Name : </p>
-                    <input id="todoName" type="text" v-model="taskName" placeholder="Add your next task here"
+                    <input id="todoTitle" type="text" v-model="tasktitle" placeholder="Add your next task here"
                         @keyup.enter="addTask()" />
                     <p>Task Description : </p>
-                    <input id="todoName" type="text" v-model="taskName" placeholder="Add your next task here"
+                    <input id="todoDescription" type="text" v-model="taskdescription" placeholder="Add your next task here"
                         @keyup.enter="addTask()" />
                 </div>
             </div>
@@ -24,29 +24,5 @@
                 </div>
             </div>
         
-    </div>
-        <!-- <div class="row align-center">
-            <div class="small-12 medium-7 columns">
-                <div class="card">
-                    <div class="card-section">
-                        <div class="row expanded">
-                            <div class="small-12 columns">
-                                <Legend for="todoName"><b>Add your next task-</b></Legend>
-                                <input id="todoName" type="text" v-model="taskName" placeholder="Add your next task here"
-                                    @keyup.enter="addTask()" />
-                            </div>
-                        </div>
-                        <div class="row expanded">
-                            <div class="small-12 columns text-right">
-                                <button @click="addTask()" type="button" class="button success btn-lg btn-block">
-                                    Add
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-   
-    
+    </div>   
 </div>
